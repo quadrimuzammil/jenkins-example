@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.techprimers.testing</groupId>
-    <artifactId>jenkins-example</artifactId>
+    <artifactId>jenkins-example-VE</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -59,15 +59,15 @@
 
     <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
+            <id>mynexus</id>
+            <url>http://65.0.101.147:8081/repository/Jenkins-example-remote-repo/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
+            <id>nexus</id>
+            <url>http://65.0.101.147:8081/repository/Jenkins-example-remote-repo/</url>
         </repository>
     </distributionManagement>
 
