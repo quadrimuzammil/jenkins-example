@@ -1,8 +1,7 @@
 node
-def mavenHome= tool name: "Maven3.6.8"
-
 {
- 
+ def mavenHome= tool name: "Maven3.6.8"
+ {
  stage ('clone code')
  {
   git credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/quadrimuzammil/jenkins-example.git'
@@ -11,5 +10,5 @@ def mavenHome= tool name: "Maven3.6.8"
  {
   sh "${mavenHome}/bin/mvn clean package"
  }
- 
+ }
 }
