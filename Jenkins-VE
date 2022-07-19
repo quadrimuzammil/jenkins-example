@@ -17,4 +17,11 @@ stage ('Upload-Artifact-Nexus')
  {
  sh "${mavenHome}/bin/mvn clean deploy"
 }
+stage ('Deploy to QA')
+{
+sshagent(['1366f5f5-1e3d-4388-b648-cb159f5b1706'])
+{
+ sh "scp -o StrictionHostKeyChecking=no target/jenkins-example-VE-1.0-SNAPSHOT.jar  ec2-user@13.233.89.53:/opt/apache-tomcat-9.0.64/webapps/"  
+}
+}
 }
