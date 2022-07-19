@@ -1,0 +1,6 @@
+Pipeline{
+any agent{
+   stages{
+   stage{
+   steps{
+    
