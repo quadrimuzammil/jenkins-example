@@ -15,6 +15,6 @@ sh "${mavenHome}/bin/mvn sonar:sonar"
  }
 stage ('Upload-Artifact-Nexus')
  {
- sh "${mavenHme}/bin/mvn clean deploy"
+ sh "${mavenHome}/bin/mvn clean deploy"
 }
 }
