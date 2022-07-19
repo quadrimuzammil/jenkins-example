@@ -14,6 +14,8 @@
         <java.version>1.8</java.version>
         <junit.jupiter.version>5.0.0-M3</junit.jupiter.version>
         <junit.platform.version>1.0.0-M3</junit.platform.version>
+         <sonar.host.url>http://3.111.47.34:9000</sonar.host.url>
+        <sonar.login>8d55afa5ab1fe0ed72b2a5516162be24803cb469</sonar.login>
     </properties>
 
     <build>
