@@ -1,5 +1,8 @@
 node{
  stage ('clone code')
  {
+  git credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/quadrimuzammil/jenkins-example.git'
+  }
+  
  
 }
