@@ -1,6 +1,6 @@
 node
 {
- def mavenHome= tool name: "Maven3.8.6"
+ def mavenHome= tool name: "Maven 3.8.6"
  stage ('clone code')
  {
   git credentialsId: 'GITHUB_CREDENTIALS', url: 'https://github.com/quadrimuzammil/jenkins-example.git'
