@@ -13,4 +13,8 @@ stage ('Execute SonarQube Report')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
  }
+stage ('Upload-Artifact-Nexus')
+ {
+ sh "${mavenHme}/bin/mvn clean deploy"
+}
 }
