@@ -56,19 +56,23 @@
         </dependency>
 
     </dependencies>
-
+<!--
     <repositories>
         <repository>
-            <id>mynexus</id>
-            <url>http://65.0.101.147:8081/repository/Jenkins-example-remote-repo/</url>
+            <id>nexus</id>
+            <url>.0.101.147:8081/repository/Jenkins-example-remote-repo/</url>
         </repository>
     </repositories>
-
+-->
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://65.0.101.147:8081/repository/Jenkins-example-remote-repo/</url>
+            <url>http://65.2.128.93:8081/repository/Jenkins-VE-Release/</url>
         </repository>
+        <snapshotRepository>
+                 <id>nexus</id>
+                 <url>http://65.2.128.93:8081/repository/Jenkins-VE-Snapshot/</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>
